@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | AluraGeek</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header class="cabecalho container">
+            <h1 class="cabecalho__logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="AluraGeek">
+                </a>
+            </h1>
+        </header>
+
+        <section class="pesquisa__mobile">
+            <input type="search" name="" id="" placeholder="O que deseja encontrar ?">
+        </section>
+
+        <main class="formulario__container">
+            <h2 class="formulario__titulo">Iniciar Sessão</h2>
+            <form class="formulario">
+                <input type="email" placeholder="Escreva seu Email" class="formulario__email" required>
+                <input type="password"placeholder="Escreva sua senha" class="formulario__senha" required>
+                <input type="submit" value="Entrar" class="botao">
+            </form>
+        </main>
+
+        <footer class="rodape">
+            <div class="rodape__conteudo">
+                <section class="rodape__info">
+                    <h2>
+                        <a href="index.html" class="rodape__area__logo" aria-label="Logo AluraGeek">
+                            <img src="img/logo.svg" alt="AluraGeek" class="rodape__logo">
+                        </a>
+                    </h2>
+                    
+                    <nav class="rodape__navegacao">
+                        <ul class="rodape__lista">
+                            <li class="rodape__item">
+                                <a href="#" class="rodape__link">Quem Somos nós</a>
+                            </li>
+                            <li class="rodape__item">
+                                <a href="#" class="rodape__link">Política de privacidade</a>
+                            </li>
+                            <li class="rodape__item">
+                                <a href="#" class="rodape__link">Programa fidelidade</a>
+                            </li>
+                            <li class="rodape__item">
+                                <a href="#" class="rodape__link">Nossas lojas</a>
+                            </li>
+                            <li class="rodape__item">
+                                <a href="#" class="rodape__link">Quero ser franqueado</a>
+                            </li>
+                            <li class="rodape__item">
+                                <a href="#" class="rodape__link">Anuncie aqui</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+    
+                <form class="rodape__formulario">
+                    <fieldset>
+                        <legend>Fale conosco</legend>
+                        
+                        <input type="text" name="nome" id="nome" class="rodape__input" placeholder="Nome">
+                        
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="rodape__input" placeholder="Digite a sua mensagem"></textarea>
+                    </fieldset>
+                    
+                    <input type="submit" class="rodape__botao botao" value="Enviar mensagem">
+                </form>
+            </div>
+
+            <div class="rodape__dev">
+                <p>Desenvolvido por Vinicius Ramalho - 2023</p>
+            </div>
+        </footer>
+
+        <script src="js/busca.js"></script>
+    </body>
+</html>

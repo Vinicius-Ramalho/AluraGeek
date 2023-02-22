@@ -1,0 +1,110 @@
+.cabecalho{
+    align-items: center;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.cabecalho__login{
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    width: 133px;
+}
+
+.cabecalho__login:hover{
+    background-color: var(--azul);
+    color: #FFFFFF;
+}
+
+.cabecalho__busca--mobile{
+    border: none;
+    background-color: #FFFFFF;
+    background-image: url('../../img/lupa.svg');
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    height: 24px;
+    width: 24px;
+}
+
+.login--icone{
+    background-image: url(../../img/lupa.svg);
+}
+
+.pesquisa__mobile{
+    padding: 16px;
+    text-align: center;
+    display: none;
+    transition: .5s ease-in-out;
+}
+
+.pesquisa__mobile--ativado{
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.pesquisa__mobile input{
+    border: 1px solid var(--cinza);
+    border-radius: 50px;
+    width: 100%;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+}
+
+.pesquisa__mobile input::placeholder{
+    color: var(--cinza);
+    background-image: url(../../img/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.cabecalho__barra-de-busca{
+    display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .cabecalho__busca--mobile{
+        display: none;
+    }
+
+    .cabecalho__barra-de-busca{
+        border: none;
+        border-radius: 50px;
+        background-color: var(--branco);
+        display: block;
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        padding: 16px;
+        outline: none;
+        width: 350px;
+    }
+
+    .cabecalho__barra-de-busca::placeholder{
+        background-image: url('../../img/lupa.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+
+/* 1440px */
+@media screen and (min-width: 1440px) {
+    .cabecalho__logo img{
+        height: 50px;
+        width: 176px;
+    }
+
+    .cabecalho__barra-de-busca{
+        width: 700px;
+    }
+}

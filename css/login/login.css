@@ -1,0 +1,40 @@
+.formulario__container{
+    padding: 50px;
+}
+
+.formulario__titulo{
+    color: var(--preto);
+    font-size: 18px;
+    font-weight: var(--destaque);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    padding: 15px;
+    border: none;
+    width: 275px;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    color: var(--preto);
+}
+
+input::placeholder{
+    color: var(--cinza);
+}
+
+.formulario__senha{
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 1440px) {
+    input{
+        width: 423px;
+    }
+}

@@ -1,0 +1,57 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+/* Estilos */
+@import url(cabecalho/cabecalho.css);
+@import url(login/login.css);
+@import url(banner/banner.css);
+@import url(produtos/produtos.css);
+@import url(rodape/rodape.css);
+
+:root{
+    /* Fonte */
+    --fonte-principal: 'Raleway', sans-serif;
+
+    /* Peso */
+    --padrao: 500;
+    --leve: 400;
+    --medio: 600;
+    --destaque: 700;
+
+    /* Cores */
+    --branco: #F5F5F5;
+    --azul: #2A7AE4;
+    --azul-claro: #EAF2FD;
+    --preto: #464646;
+    --cinza: #A2A2A2;
+    --cinza-claro: #F5F5F5;
+}
+
+body{
+    background-color: var(--branco);
+    box-sizing: border-box;
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-weight: var(--padrao);
+}
+
+.container{
+    padding: 16px;
+}
+
+.botao{
+    background-color: var(--azul);
+    color: var(--branco);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: var(--medio);
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        padding: 16px 90px;
+    }
+}
